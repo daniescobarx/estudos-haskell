@@ -7,3 +7,38 @@ numeros = [1, 2, 3, 4, 5]
 -- Exemplo de lista de strings
 nomes :: [String]
 nomes = ["Daniela", "Paula", "Escobar"]
+
+-- Acessando elementos da lista
+primeiroElemento :: Int
+primeiroElemento = head numeros -- head pega o primeiro elemento
+
+restoDaLista :: Int
+restoDaLista = tail numeros     -- tail pega todos os elementos, menos o primeiro
+
+ultimoElemento :: [Int]
+ultimoElemento = last numeros     -- last pega o ultimo elemento
+
+-- Pegando os n primeiros elementos
+primeirosTres :: [Int]
+primeirosTres = take 3 numeros --[1, 2, 3]
+
+-- Removendo os n primeiros elementos
+semOsDoisPrimeiros :: [Int]
+semOsDoisPrimeiros = drop 2 numeros  -- [3,4,5]
+
+-- Verifica se um elemento pertence a lista
+temDois :: Bool
+temDois = 4 `elem` numeros --false
+
+--tamanho da lista
+tamanho :: Int
+tamanho == length numeros --retorna 5
+
+
+-- somando todos os elementos da lista
+somaLista :: Int
+somaLista = sum numeros 
+
+-- multiplicando todos os elementos da lista
+produtoLista :: Int
+produtoLista = product numeros 
