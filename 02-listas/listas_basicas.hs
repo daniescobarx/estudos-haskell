@@ -12,10 +12,10 @@ nomes = ["Daniela", "Paula", "Escobar"]
 primeiroElemento :: Int
 primeiroElemento = head numeros -- head pega o primeiro elemento
 
-restoDaLista :: Int
+restoDaLista :: [Int]
 restoDaLista = tail numeros     -- tail pega todos os elementos, menos o primeiro
 
-ultimoElemento :: [Int]
+ultimoElemento :: Int
 ultimoElemento = last numeros     -- last pega o ultimo elemento
 
 -- Pegando os n primeiros elementos
