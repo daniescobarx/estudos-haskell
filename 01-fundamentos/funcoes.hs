@@ -8,6 +8,7 @@ maior x y
 
 ehPar :: Int -> Bool
 ehPar n = n `mod` 2 == 0 --mod é o operador de resto da divisao
+--crases (`) em volta de função deixam ela como operador
 
 somaTres :: Int -> Int -> Int -> Int
 somaTres a b c = a + b + c
