@@ -42,3 +42,15 @@ somaLista = sum numeros
 -- multiplicando todos os elementos da lista
 produtoLista :: Int
 produtoLista = product numeros 
+
+-- lista com intervalo
+intervalo :: [Int]
+intervalo = [1..10]   -- gera [1,2,3,4,5,6,7,8,9,10]
+
+-- lista com salto
+pares :: [Int]
+pares = [2,4..20]     -- gera [2,4,6 ate o 20]
+
+-- Filtrando listas
+paresAte10 :: [Int]
+paresAte10 = [x | x <- [1..10], even x]
