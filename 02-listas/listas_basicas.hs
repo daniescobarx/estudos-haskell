@@ -32,8 +32,7 @@ temDois = 4 `elem` numeros --false
 
 --tamanho da lista
 tamanho :: Int
-tamanho == length numeros --retorna 5
-
+tamanho = length numeros --retorna 5
 
 -- somando todos os elementos da lista
 somaLista :: Int
